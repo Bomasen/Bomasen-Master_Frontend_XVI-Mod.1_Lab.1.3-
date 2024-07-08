@@ -6,7 +6,7 @@
   height: 100dvh;
   max-width: 1200px;
   display: grid;
-  grid-template-columns: 200px 85%;
+  grid-template-columns: 200px 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
     "header header"
@@ -107,6 +107,7 @@
     grid-area: main;
 
     & .main-container {
+      height: 100%;
       background-color: $main-background-color;
       display: flex;
       flex-flow: row wrap;
